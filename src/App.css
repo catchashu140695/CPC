@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.carousel-item img {
+  height: 300px; /* Set the height of the images */
+  object-fit: cover; /* Ensure the images cover the entire area */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 200px; /* Reduce the height of the images for smaller screens */
+  }
+}
+
+.testimonial-card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-heading {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel-icon {
+  font-size: 36px;
+  color: #007bff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-control-prev:hover .carousel-icon,
+.carousel-control-next:hover .carousel-icon {
+  color: #0056b3;
+}
+
+.author-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* CSS Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9); /* Optional: You can adjust the scale of the element */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to portfolio items */
+.portfolio-item {
+  animation: fadeIn 0.5s ease forwards; /* Adjust the animation duration as needed */
+}
+
+/* Optional: Delay animation for each portfolio item */
+.portfolio-item:nth-child(odd) {
+  animation-delay: 0.2s; /* Delay each odd item by 0.2s */
+}
+.portfolio-item:nth-child(even) {
+  animation-delay: 0.4s; /* Delay each even item by 0.4s */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
