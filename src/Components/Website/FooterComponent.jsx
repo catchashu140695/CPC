@@ -9,9 +9,9 @@ export default function FooterComponent() {
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Address</h5>
-              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-              <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
+              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>Damana Square, Bhubaneswar</p>
+              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+919090033366</p>
+              <p className="mb-2"><i className="fa fa-envelope me-3"></i>mycpc@gmail.com</p>
               <div className="d-flex pt-2">
                 <NavLink className="btn btn-square btn-outline-light btn-social" to=""><i className="fab fa-twitter"></i></NavLink>
                 <NavLink className="btn btn-square btn-outline-light btn-social" to=""><i className="fab fa-facebook-f"></i></NavLink>
@@ -21,11 +21,10 @@ export default function FooterComponent() {
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Quick Links</h5>
-              <NavLink className="btn btn-link" to="">About Us</NavLink>
-              <NavLink className="btn btn-link" to="">Contact Us</NavLink>
-              <NavLink className="btn btn-link" to="">Our Services</NavLink>
-              <NavLink className="btn btn-link" to="">Terms & Condition</NavLink>
-              <NavLink className="btn btn-link" to="">Support</NavLink>
+              <NavLink className="btn btn-link" to="/about">About Us</NavLink>
+              <NavLink className="btn btn-link" to="/contact">Contact Us</NavLink>
+              <NavLink className="btn btn-link" to="/services">Our Services</NavLink>
+              <NavLink className="btn btn-link" to="projects">Projects</NavLink>              
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Project Gallery</h5>
@@ -52,7 +51,7 @@ export default function FooterComponent() {
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Newsletter</h5>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <p>Subscribe to Our Newsletter for the Latest News and Insights!</p>
               <div className="position-relative mx-auto" >
                 <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
                 <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>

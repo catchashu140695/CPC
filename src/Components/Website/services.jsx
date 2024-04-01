@@ -5,6 +5,7 @@ import Testimonial from './Testimonial';
 
 export default function services(props) {
 
+    
 
     return (
         <>
@@ -30,84 +31,59 @@ export default function services(props) {
                         <h1 className="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
                     </div>
                     <div className="row g-4">
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded overflow-hidden">
                                 <img className="img-fluid" src="img/img-600x400-1.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-solar-panel fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Solar Panels</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
+                                    <h4 className="mb-3">Solar Installation</h4>
+                                    <p>We offer comprehensive solar installation services, handling everything from system design and engineering to permitting and installation. Our goal is to make the transition to solar energy seamless and hassle-free for our customers.</p>
+                                    {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="service-item rounded overflow-hidden">
                                 <img className="img-fluid" src="img/img-600x400-2.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-wind fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Wind Turbines</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
+                                    <h4 className="mb-3">Maintenance and Repairs</h4>
+                                    <p>To ensure optimal performance and longevity of your solar system, we provide regular maintenance services and prompt repairs as needed. Our team will keep your solar panels operating at peak efficiency year-round.</p>
+                                    {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="service-item rounded overflow-hidden">
                                 <img className="img-fluid" src="img/img-600x400-3.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-lightbulb fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Hydropower Plants</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
+                                    <h4 className="mb-3">Energy Monitoring</h4>
+                                    <p>With our advanced energy monitoring solutions, you can track your solar system's performance in real-time, allowing you to monitor energy production, detect potential issues, and optimize your energy usage.</p>
+                                    {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded overflow-hidden">
                                 <img className="img-fluid" src="img/img-600x400-4.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-solar-panel fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Solar Panels</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
+                                    <h4 className="mb-3">Financing Options</h4>
+                                    <p>We understand that upfront costs can be a barrier to adopting solar energy. That's why we offer flexible financing options to make solar more accessible to homeowners and businesses, including solar leases, loans, and power purchase agreements.</p>
+                                    {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                            <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-5.jpg" alt="" />
-                                <div className="position-relative p-4 pt-0">
-                                    <div className="service-icon">
-                                        <i className="fa fa-wind fa-3x"></i>
-                                    </div>
-                                    <h4 className="mb-3">Wind Turbines</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                            <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-6.jpg" alt="" />
-                                <div className="position-relative p-4 pt-0">
-                                    <div className="service-icon">
-                                        <i className="fa fa-lightbulb fa-3x"></i>
-                                    </div>
-                                    <h4 className="mb-3">Hydropower Plants</h4>
-                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                                    <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -118,8 +94,8 @@ export default function services(props) {
                         <div className="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                             <div className="p-lg-5 ps-lg-0">
                                 <h6 className="text-primary">Why Choose Us!</h6>
-                                <h1 className="mb-4">Complete Commercial & Residential Solar Systems</h1>
-                                <p className="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                                <h1 className="mb-4">Join the Solar Revolution</h1>
+                                <p className="mb-4 pb-2">Join us in embracing a cleaner, greener future with solar energy. Whether you're looking to reduce your electricity bills, increase your property value, or contribute to a more sustainable world, Cellera Power Care is here to help you harness the power of the sun. Contact us today to learn more about our solar solutions and take the first step towards energy independence.</p>
                                 <div className="row g-4">
                                     <div className="col-6">
                                         <div className="d-flex align-items-center">

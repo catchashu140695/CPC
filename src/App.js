@@ -8,6 +8,7 @@ import Contact from "./Components/Website/contact.jsx";
 import Projects from "./Components/Website/projects.jsx";
 import Testimonial from "./Components/Website/Testimonial.jsx";
 import About from "./Components/Website/about.jsx";
+import GetQuote from "./Components/Website/getaquote.jsx";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
                   <Services headshow="false" />
                   <Projects headshow="false"></Projects>
                   <Contact headshow="false"></Contact>
+                  <GetQuote></GetQuote>
                   <Testimonial testimonials={testimonials}></Testimonial>
                 </>
               );
@@ -75,6 +77,12 @@ function App() {
             path="/contact"
             Component={() => {
               return <Contact headshow="true" />;
+            }}
+          ></Route>
+           <Route
+            path="/quote"
+            Component={() => {
+              return <GetQuote  />;
             }}
           ></Route>
         </Routes>

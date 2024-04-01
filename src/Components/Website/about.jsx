@@ -33,7 +33,7 @@ export default function About(props) {
                                 <h1 className="mb-0" data-toggle="counter-up">3453</h1>
                             </div>
                             <h5 className="mb-3">Happy Customers</h5>
-                            <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                            <span>Happy customers boost loyalty, spread positive word-of-mouth, and drive business growth.</span>
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                             <div className="d-flex align-items-center mb-4">
@@ -43,7 +43,7 @@ export default function About(props) {
                                 <h1 className="mb-0" data-toggle="counter-up">4234</h1>
                             </div>
                             <h5 className="mb-3">Project Done</h5>
-                            <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                            <span>Completed projects showcase skills, achievements, and the ability to meet deadlines effectively.</span>
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                             <div className="d-flex align-items-center mb-4">
@@ -53,7 +53,7 @@ export default function About(props) {
                                 <h1 className="mb-0" data-toggle="counter-up">3123</h1>
                             </div>
                             <h5 className="mb-3">Awards Win</h5>
-                            <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                            <span>Triumph at awards signifies recognition of excellence, inspiring further achievements.</span>
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                             <div className="d-flex align-items-center mb-4">
@@ -63,7 +63,7 @@ export default function About(props) {
                                 <h1 className="mb-0" data-toggle="counter-up">1831</h1>
                             </div>
                             <h5 className="mb-3">Expert Workers</h5>
-                            <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                            <span>Skilled professionals driving innovation and efficiency in their fields.</span>
                         </div>
                     </div>
                 </div>

@@ -122,3 +122,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.service-item {
+  
+  height: 36rem;
+}

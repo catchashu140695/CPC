@@ -25,13 +25,13 @@ export default function Navbar() {
                     <div className="col-lg-5 px-5 text-end">
                         <div className="h-100 d-inline-flex align-items-center me-4">
                             <small className="fa fa-phone-alt text-primary me-2"></small>
-                            <small>+012 345 6789</small>
+                            <small>+919090033366</small>
                         </div>
                         <div className="h-100 d-inline-flex align-items-center mx-n2">
-                            <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to=""><i className="fab fa-facebook-f"></i></NavLink>
-                            <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to=""><i className="fab fa-twitter"></i></NavLink>
-                            <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to=""><i className="fab fa-linkedin-in"></i></NavLink>
-                            <NavLink className="btn btn-square btn-link rounded-0" to=""><i className="fab fa-instagram"></i></NavLink>
+                            <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to="www.facebook.com/CelleraPowerCare"><i className="fab fa-facebook-f"></i></NavLink>
+                            {/* <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to="www.facebook.com/CelleraPowerCare"><i className="fab fa-twitter"></i></NavLink>
+                            <NavLink className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" to="www.linkedin.com/CelleraPowerCare"><i className="fab fa-linkedin-in"></i></NavLink> */}
+                            <NavLink className="btn btn-square btn-link rounded-0" to="www.instagram.com/CelleraPowerCare"><i className="fab fa-instagram"></i></NavLink>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
                         <NavLink to="/projects" className="nav-item nav-link" isActive={() => isActive('/project')}>Project</NavLink>
                         <NavLink to="/contact" className="nav-item nav-link" isActive={() => isActive('/contact')}>Contact</NavLink>
                     </div>
-                    <NavLink to="" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></NavLink>
+                    <NavLink to="/quote" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></NavLink>
                 </div>
             </nav>
         </div>
