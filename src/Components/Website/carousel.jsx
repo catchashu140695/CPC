@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink }  from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Carousel() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -11,6 +11,16 @@ function Carousel() {
     const handleNext = () => {
         setActiveIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
     };
+
+    // Set up auto-slide
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext(); // Move to the next slide every 10 seconds
+        }, 10000); // 5000 milliseconds = 5 seconds
+
+        // Clean up the interval on component unmount
+        return () => clearInterval(interval);
+    }, []); // Empty dependency array means this effect runs only once after the initial render
 
     return (
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -42,7 +52,7 @@ function Carousel() {
                     <img className="d-block w-100" src="img/carousel-3.jpg" alt="Third slide" />
                 </div>
             </div>
-            <NavLink className="carousel-control-prev"  role="button" onClick={handlePrev}>
+            <NavLink className="carousel-control-prev" role="button" onClick={handlePrev}>
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </NavLink>
