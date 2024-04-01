@@ -1,10 +1,52 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 export default function FooterComponent() {
+
+  const notifySuccess = (message) => toast.success(message, {
+    // Customization options
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+
+  // Function to show an error toast
+  const notifyError = (message) => toast.error(message, {
+    // Customization options
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+
+  const newsLetter = () => {
+    const email = document.getElementById("txtemail").value;
+    // Regular expression for basic email validation
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (email !== "" && regex.test(email)) {
+        notifySuccess("Congratulations, you are now signed up for Newsletters!");
+        document.getElementById("txtemail").value="";
+    } else {
+        notifyError("Please enter a valid email Id!");
+    }
+}
+
+
   return (
-    <div>
-        <div className="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <>
+      <ToastContainer />
+      <div className="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
@@ -22,10 +64,10 @@ export default function FooterComponent() {
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Quick Links</h5>
               <NavLink className="btn btn-link" to="/about">About Us</NavLink>
-              <NavLink className="btn btn-link" to="/contact">Contact Us</NavLink>
+              {/* <NavLink className="btn btn-link" to="/contact">Contact Us</NavLink> */}
               <NavLink className="btn btn-link" to="/services">Our Services</NavLink>
-              <NavLink className="btn btn-link" to="projects">Projects</NavLink> 
-              <NavLink className="btn btn-link" to="/quote">Get a Quote</NavLink>              
+              <NavLink className="btn btn-link" to="projects">Projects</NavLink>
+              <NavLink className="btn btn-link" to="/quote">Get a Quote</NavLink>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Project Gallery</h5>
@@ -54,8 +96,8 @@ export default function FooterComponent() {
               <h5 className="text-white mb-4">Newsletter</h5>
               <p>Subscribe to Our Newsletter for the Latest News and Insights!</p>
               <div className="position-relative mx-auto" >
-                <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" id='txtemail' placeholder="Your email" />
+                <button type="button" onClick={newsLetter} className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
               </div>
             </div>
           </div>
@@ -64,17 +106,17 @@ export default function FooterComponent() {
           <div className="copyright">
             <div className="row">
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <NavLink to="#">Cellera Power Care</NavLink>, All Right Reserved.
+                &copy; <NavLink to="/">Cellera Power Care</NavLink>, All Right Reserved.
               </div>
               <div className="col-md-6 text-center text-md-end">
 
-               
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
+    </>
   )
 }

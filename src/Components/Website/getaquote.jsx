@@ -48,14 +48,43 @@ export default function GetAQuote() {
   };
 
   const validateForm = () => {
-    // Simple validation logic (expand according to your needs)
-    return form.email.includes('@') && form.name && form.mobile && form.power;
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if(form.name==="")
+    {
+      notifyError("Please enter Name !")
+      return false;
+    }
+    if(form.email==="")
+    {
+      notifyError("Please enter email !")
+      return false;
+    }
+    if(!regex.test(form.email))
+    {
+      notifyError("Please valid Email Id !")
+      return false;
+    }
+    if(form.mobile==="")
+    {
+      notifyError("Please enter Mobile !")
+      return false;
+    }
+    if(form.mobile.length === 10)
+    {
+      notifyError("Mobile should be 10 digits !")
+      return false;
+    }
+    if(form.power === 0)
+    {
+      notifyError("Please select power !")
+      return false;
+    }
+    return true;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!validateForm()) {
-      notifyError("Enter all fields correctly !!!"); // Consider using a more user-friendly notification here
+    if (!validateForm()) {      
       return;
     }
     // EmailJS parameters
@@ -83,7 +112,7 @@ export default function GetAQuote() {
     <>   
    
       <ToastContainer />
-      <div className="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div className="container-fluid bg-light overflow-hidden px-lg-0">
         <div className="container quote px-lg-0">
           <div className="row g-0 mx-lg-0">
             <div className="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style={{ minHeight: "400px" }}>

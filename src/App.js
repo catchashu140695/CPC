@@ -4,7 +4,6 @@ import Navbar from "./Components/Website/navbar.jsx";
 import Carousel from "./Components/Website/carousel.jsx";
 import FooterComponent from "./Components/Website/FooterComponent.jsx";
 import Services from "./Components/Website/services.jsx";
-import Contact from "./Components/Website/contact.jsx";
 import Projects from "./Components/Website/projects.jsx";
 import Testimonial from "./Components/Website/Testimonial.jsx";
 import About from "./Components/Website/about.jsx";
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router>       
         <Navbar></Navbar>
         <Routes>
           <Route
@@ -75,12 +74,7 @@ function App() {
               return <Projects headshow="true" />;
             }}
           ></Route>
-          <Route
-            path="/contact"
-            Component={() => {
-              return <Contact headshow="true" />;
-            }}
-          ></Route>
+          
            <Route
             path="/quote"
             Component={() => {
