@@ -1,8 +1,33 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import Toast from './toast.jsx';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function GetAQuote() {
+
+  const notifySuccess = (message) => toast.success(message, {
+    // Customization options
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+
+  // Function to show an error toast
+  const notifyError = (message) => toast.error(message, {
+    // Customization options
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -12,16 +37,7 @@ export default function GetAQuote() {
     to: 'catchashu140695@gmail.com',
   });
   const [submitted, setSubmitted] = useState(false);
-  const [showToast, setShowToast] = useState(false);
-  const [toastMessage, setToastMessage] = useState('');
-  const [toastType, setToastType] = useState('success'); // Assuming your Toast component uses this prop
-
-  const displayToast = (message, type = 'success') => {
-    setToastMessage(message);
-    setToastType(type);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000); // Hide after 3 seconds
-  };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,27 +55,34 @@ export default function GetAQuote() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) {
-      alert('Please fill in the form correctly.'); // Consider using a more user-friendly notification here
+      notifyError("Enter all fields correctly !!!"); // Consider using a more user-friendly notification here
       return;
     }
     // EmailJS parameters
     const serviceId = 'service_qfmv5i7';
     const templateId = 'template_cnwxosj';
-    const userId = '-L5wn-qi3lBlVlVK';
+    const userId = '-L5wn-qi3lBlVlVK1';
     emailjs.send(serviceId, templateId, form, userId)
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+      .then((response) => {        
         setSubmitted(true);
-        displayToast("Email Sent successfully !", 'success');
-      }, (err) => {
-        console.log('FAILED...', err);
-        displayToast("Failed to send email. Please try again.", 'error');
+        notifySuccess("Email Sent Successfully");
+        setForm({
+          name:"",
+          email:"",
+          mobile:"",
+          power:0,
+          note:""
+        })
+
+      }, (err) => {        
+        notifyError("Email Sent Error");
       });
   };
 
   return (
-    <>
-      
+    <>   
+   
+      <ToastContainer />
       <div className="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div className="container quote px-lg-0">
           <div className="row g-0 mx-lg-0">
