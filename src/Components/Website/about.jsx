@@ -81,12 +81,13 @@ export default function About(props) {
                         <div className="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                             <div className="p-lg-5 pe-lg-0">
                                 <h6 className="text-primary">About Us</h6>
-                                <h1 className="mb-4">25+ Years Experience In Solar & Renewable Energy Industry</h1>
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                                <p><i className="fa fa-check-circle text-primary me-3"></i>Diam dolor diam ipsum</p>
+                                <h1 className="mb-4">Empowering Sustainable Energy Solutions</h1>
+                                <p>Cellera Power Care established in 2016 being is a premier solar energy company in India. Past 8-year of background in Rejuvenating  lead acid batteries, Commissioning of Solar On-Grid and Off-Grid Solar power generation system. We have emerged as trusted name in the solar industry. 
+At Cellera Power Care we are committed to revolutionizing the energy landscape through innovative solar solutions. As a leading solar rooftop integrator, we specialize in providing tailored solar energy systems for residential, commercial, and industrial properties. Our mission is to empower individuals, businesses, and communities to harness the power of the sun, reducing their carbon footprint while saving on energy costs.</p>
+                                {/* <p><i className="fa fa-check-circle text-primary me-3"></i>Diam dolor diam ipsum</p>
                                 <p><i className="fa fa-check-circle text-primary me-3"></i>Aliqu diam amet diam et eos</p>
                                 <p><i className="fa fa-check-circle text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                                <NavLink to="" className="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</NavLink>
+                                <NavLink to="" className="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</NavLink> */}
                             </div>
                         </div>
                     </div>
