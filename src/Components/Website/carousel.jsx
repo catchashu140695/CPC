@@ -54,11 +54,11 @@ function Carousel() {
             </div>
             <NavLink className="carousel-control-prev" role="button" onClick={handlePrev}>
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
+                
             </NavLink>
             <NavLink className="carousel-control-next" role="button" onClick={handleNext}>
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
+                
             </NavLink>
         </div>
     );

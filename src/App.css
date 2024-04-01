@@ -128,3 +128,60 @@
   
   height: 36rem;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: transparent; /* Hide the original text */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '';
+    display: inline-block;
+    border: solid white; /* Use white color for the arrows */
+    border-width: 0 3px 3px 0; /* Adjust these values to change the arrow size */
+    padding: 3px;
+}
+
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg); /* Rotate for the previous arrow direction */
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg); /* Rotate for the next arrow direction */
+}
+
+/* Additional styling for positioning and visibility */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    width: auto;
+    margin: 0 15px;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/* Ensure the arrows are easily visible */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); /* Optional: adds a shadow for better visibility */
+}
