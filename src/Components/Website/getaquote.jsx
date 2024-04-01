@@ -36,7 +36,7 @@ export default function GetAQuote() {
     note: '',
     to: 'catchashu140695@gmail.com',
   });
-  const [submitted, setSubmitted] = useState(false);
+ 
   
 
   const handleChange = (e) => {
@@ -63,8 +63,8 @@ export default function GetAQuote() {
     const templateId = 'template_cnwxosj';
     const userId = '-L5wn-qi3lBlVlVK1';
     emailjs.send(serviceId, templateId, form, userId)
-      .then((response) => {        
-        setSubmitted(true);
+      .then((response) => {       
+        
         notifySuccess("Email Sent Successfully");
         setForm({
           name:"",
