@@ -27,16 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-.carousel-item img {
-  height: 300px; /* Set the height of the images */
-  object-fit: cover; /* Ensure the images cover the entire area */
-}
 
-@media (max-width: 768px) {
-  .carousel-item img {
-      height: 200px; /* Reduce the height of the images for smaller screens */
-  }
-}
 
 .testimonial-card {
   background-color: #f8f9fa;
@@ -53,25 +44,7 @@
   margin-bottom: 20px;
 }
 
-.carousel-icon {
-  font-size: 36px;
-  color: #007bff;
-}
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: auto;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: none;
-}
-
-.carousel-control-prev:hover .carousel-icon,
-.carousel-control-next:hover .carousel-icon {
-  color: #0056b3;
-}
 
 .author-image {
   width: 80px;
@@ -184,4 +157,15 @@
 .carousel-control-next-icon::before {
     color: white;
     text-shadow: 0 0 5px rgba(0,0,0,0.7); /* Optional: adds a shadow for better visibility */
+}
+
+.carousel-item img {
+  height: 400px; /* Set the height of the images */
+  object-fit: cover; /* Ensure the images cover the entire area */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 300px; /* Reduce the height of the images for smaller screens */
+  }
 }
