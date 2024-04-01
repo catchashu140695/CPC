@@ -50,7 +50,7 @@ export default function Navbar() {
                         <NavLink to="/about" className="nav-item nav-link" isActive={() => isActive('/about')}>About</NavLink>
                         <NavLink to="/services" className="nav-item nav-link" isActive={() => isActive('/service')}>Service</NavLink>
                         <NavLink to="/projects" className="nav-item nav-link" isActive={() => isActive('/project')}>Project</NavLink>
-                        <NavLink to="/contact" className="nav-item nav-link" isActive={() => isActive('/contact')}>Contact</NavLink>
+                        {/* <NavLink to="/contact" className="nav-item nav-link" isActive={() => isActive('/contact')}>Contact</NavLink> */}
                     </div>
                     <NavLink to="/quote" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></NavLink>
                 </div>

@@ -24,7 +24,8 @@ export default function FooterComponent() {
               <NavLink className="btn btn-link" to="/about">About Us</NavLink>
               <NavLink className="btn btn-link" to="/contact">Contact Us</NavLink>
               <NavLink className="btn btn-link" to="/services">Our Services</NavLink>
-              <NavLink className="btn btn-link" to="projects">Projects</NavLink>              
+              <NavLink className="btn btn-link" to="projects">Projects</NavLink> 
+              <NavLink className="btn btn-link" to="/quote">Get a Quote</NavLink>              
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-4">Project Gallery</h5>

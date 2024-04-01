@@ -49,7 +49,7 @@ function App() {
                   <About headshow="false"></About>
                   <Services headshow="false" />
                   <Projects headshow="false"></Projects>
-                  <Contact headshow="false"></Contact>
+                  {/* <Contact headshow="false"></Contact> */}
                   <GetQuote></GetQuote>
                   <Testimonial testimonials={testimonials}></Testimonial>
                 </>
