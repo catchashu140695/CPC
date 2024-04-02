@@ -69,7 +69,7 @@ export default function GetAQuote() {
       notifyError("Please enter Mobile !")
       return false;
     }
-    if(form.mobile.length === 10)
+    if(form.mobile.length !== 10)
     {
       notifyError("Mobile should be 10 digits !")
       return false;
