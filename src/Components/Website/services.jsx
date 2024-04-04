@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Testimonial from './Testimonial';
-
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 export default function services(props) {
 
@@ -33,7 +33,7 @@ export default function services(props) {
                     <div className="row g-4">
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-1.jpg" alt="" />
+                                <img className="img-fluid" src="img/7.jpeg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-solar-panel fa-3x"></i>
@@ -46,7 +46,7 @@ export default function services(props) {
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-2.jpg" alt="" />
+                                <img className="img-fluid" src="img/8.jpeg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-wind fa-3x"></i>
@@ -59,7 +59,7 @@ export default function services(props) {
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-3.jpg" alt="" />
+                                <img className="img-fluid" src="img/9.jpeg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-lightbulb fa-3x"></i>
@@ -72,10 +72,11 @@ export default function services(props) {
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/img-600x400-4.jpg" alt="" />
+                                <img className="img-fluid" src="img/10.png" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
-                                        <i className="fa fa-solar-panel fa-3x"></i>
+                                    <CurrencyRupeeIcon style={{ fontSize: '70px' }} />
+                                    
                                     </div>
                                     <h4 className="mb-3">Financing Options</h4>
                                     <p>We understand that upfront costs can be a barrier to adopting solar energy. That's why we offer flexible financing options to make solar more accessible to homeowners and businesses, including solar leases, loans, and power purchase agreements.</p>
@@ -146,7 +147,7 @@ export default function services(props) {
                         </div>
                         <div className="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style={{ minHeight: "400px" }}>
                             <div className="position-relative h-100">
-                                <img className="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style={{ objectFit: "cover" }} alt="" />
+                                <img className="position-absolute img-fluid w-100 h-100" src="img/12.jpeg" style={{ objectFit: "cover" }} alt="" />
                             </div>
                         </div>
                     </div>

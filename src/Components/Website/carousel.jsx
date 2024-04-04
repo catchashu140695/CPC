@@ -43,13 +43,13 @@ function Carousel() {
             </ol>
             <div className="carousel-inner">
                 <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-                    <img className="d-block w-100" src="img/carousel-1.jpg" alt="First slide" />
+                    <img className="d-block w-100" src="img/1.jpg" alt="First slide" />
                 </div>
                 <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
                     <img className="d-block w-100" src="img/carousel-2.jpg" alt="Second slide" />
                 </div>
                 <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-                    <img className="d-block w-100" src="img/carousel-3.jpg" alt="Third slide" />
+                    <img className="d-block w-100" src="img/3.jpg" alt="Third slide" />
                 </div>
             </div>
             <NavLink className="carousel-control-prev" role="button" onClick={handlePrev}>
