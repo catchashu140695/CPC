@@ -169,3 +169,48 @@
       height: 300px; /* Reduce the height of the images for smaller screens */
   }
 }
+
+.btn-primary{
+  background-color: #e53935;
+  border-color: #e53935;
+  color: white;
+}
+.btn-primary:hover{
+  background-color: #c62828;
+  border-color: #c62828;
+  color: white;
+}
+
+.bg-primary{
+  background-color: #e53935 !important;
+  border-color: #e53935;
+  color: white;
+}
+.text-primary{
+  color: #e53935 !important;
+}
+
+.navbar.sticky-top {
+    position: sticky !important;
+    top: 0;
+    z-index: 1020;
+}
+.service-icon{
+  color: white;
+  background-color: #e53935 !important;
+}
+.service-icon:hover{
+  background-color: #c62828 !important;
+  color: white;
+}
+.nav-link:hover{
+  color: #e53935 !important;
+}
+.nav-link:active{
+  color: #e53935 !important;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #e53935 !important;
+}
+

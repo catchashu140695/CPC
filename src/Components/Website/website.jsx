@@ -356,12 +356,8 @@ const website = () => {
             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div className="team-item rounded overflow-hidden">
                 <div className="d-flex">
-                  <img className="img-fluid w-75" src="img/team-1.jpg" alt="" />
-                  <div className="team-social w-25">
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-facebook-f"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-twitter"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-instagram"></i></NavLink>
-                  </div>
+                  <img className="img-fluid w-100" src="img/team-1.jpg" alt="" />
+                 
                 </div>
                 <div className="p-4">
                   <h5>Full Name</h5>
@@ -372,12 +368,8 @@ const website = () => {
             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div className="team-item rounded overflow-hidden">
                 <div className="d-flex">
-                  <img className="img-fluid w-75" src="img/team-2.jpg" alt="" />
-                  <div className="team-social w-25">
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-facebook-f"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-twitter"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-instagram"></i></NavLink>
-                  </div>
+                  <img className="img-fluid w-100" src="img/team-2.jpg" alt="" />
+                  
                 </div>
                 <div className="p-4">
                   <h5>Full Name</h5>
@@ -388,12 +380,8 @@ const website = () => {
             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="team-item rounded overflow-hidden">
                 <div className="d-flex">
-                  <img className="img-fluid w-75" src="img/team-3.jpg" alt="" />
-                  <div className="team-social w-25">
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-facebook-f"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-twitter"></i></NavLink>
-                    <NavLink className="btn btn-lg-square btn-outline-primary rounded-circle mt-3" to=""><i className="fab fa-instagram"></i></NavLink>
-                  </div>
+                  <img className="img-fluid w-100" src="img/team-3.jpg" alt="" />
+                 
                 </div>
                 <div className="p-4">
                   <h5>Full Name</h5>

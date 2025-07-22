@@ -46,12 +46,12 @@ export default function services(props) {
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/8.jpeg" alt="" />
+                                <img className="img-fluid" src="img/8.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-wind fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Maintenance and Repairs</h4>
+                                    <h4 className="mb-3">Maintenance & Repairs</h4>
                                     <p>To ensure optimal performance and longevity of your solar system, we provide regular maintenance services and prompt repairs as needed. Our team will keep your solar panels operating at peak efficiency year-round.</p>
                                     {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
@@ -59,20 +59,20 @@ export default function services(props) {
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/9.jpeg" alt="" />
+                                <img className="img-fluid" src="img/9.jpg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                         <i className="fa fa-lightbulb fa-3x"></i>
                                     </div>
-                                    <h4 className="mb-3">Energy Monitoring</h4>
-                                    <p>With our advanced energy monitoring solutions, you can track your solar system's performance in real-time, allowing you to monitor energy production, detect potential issues, and optimize your energy usage.</p>
+                                    <h4 className="mb-3">Solar Insurance</h4>
+                                    <p>Protect your solar investment with our insurance plans, covering natural disasters, theft, and system failures. Ensure uninterrupted energy production and financial security with our comprehensive solar panel protection.</p>
                                     {/* <NavLink className="small fw-medium" to="">Read More<i className="fa fa-arrow-right ms-2"></i></NavLink> */}
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded overflow-hidden">
-                                <img className="img-fluid" src="img/10.png" alt="" />
+                                <img className="img-fluid" src="img/10.jpeg" alt="" />
                                 <div className="position-relative p-4 pt-0">
                                     <div className="service-icon">
                                     <CurrencyRupeeIcon style={{ fontSize: '70px' }} />
@@ -96,7 +96,9 @@ export default function services(props) {
                             <div className="p-lg-5 ps-lg-0">
                                 <h6 className="text-primary">Why Choose Us!</h6>
                                 <h1 className="mb-4">Join the Solar Revolution</h1>
-                                <p className="mb-4 pb-2">Join us in embracing a cleaner, greener future with solar energy. Whether you're looking to reduce your electricity bills, increase your property value, or contribute to a more sustainable world, Cellera Power Care is here to help you harness the power of the sun. Contact us today to learn more about our solar solutions and take the first step towards energy independence.</p>
+                                <p className="mb-4 pb-2">
+                    With over 7 years of experience in the solar industry, we bring unmatched expertise and reliability to every project. Our skilled installation team ensures high-quality workmanship, while our proven track record in both government and private sector projects highlights our versatility and trustworthiness. We offer comprehensive in-house service and Annual Maintenance Contract (AMC) support to guarantee long-term performance. Recognized for our excellence, we are proud recipients of the Award for Innovation and were honored as a Top Performer for the year 2022–23.
+                </p>
                                 <div className="row g-4">
                                     <div className="col-6">
                                         <div className="d-flex align-items-center">
@@ -154,9 +156,7 @@ export default function services(props) {
                 </div>
             </div>
 
-            {
-                props.headshow==="true"? <Testimonial />:null
-            }
+           
 
 
 

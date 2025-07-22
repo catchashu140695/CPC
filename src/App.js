@@ -50,7 +50,7 @@ function App() {
                   <Projects headshow="false"></Projects>
                   {/* <Contact headshow="false"></Contact> */}
                   <GetQuote></GetQuote>
-                  <Testimonial testimonials={testimonials}></Testimonial>
+                  {/* <Testimonial testimonials={testimonials}></Testimonial> */}
                 </>
               );
             }}

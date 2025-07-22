@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import carouselImage1 from '../../Assets/img/carousel-1.jpg';
+import carouselImage2 from '../../Assets/img/gallery-6.jpeg';
+import carouselImage3 from '../../Assets/img/gallery-7.jpeg';
 
 function Carousel() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -43,13 +46,13 @@ function Carousel() {
             </ol>
             <div className="carousel-inner">
                 <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-                    <img className="d-block w-100" src="img/1.jpg" alt="First slide" />
+                    <img className="d-block w-100" src={carouselImage3} alt="First slide" />
                 </div>
                 <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
-                    <img className="d-block w-100" src="img/carousel-2.jpg" alt="Second slide" />
+                    <img className="d-block w-100" src={carouselImage2} alt="Second slide" />
                 </div>
                 <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-                    <img className="d-block w-100" src="img/3.jpg" alt="Third slide" />
+                    <img className="d-block w-100" src={carouselImage1} alt="Third slide" />
                 </div>
             </div>
             <NavLink className="carousel-control-prev" role="button" onClick={handlePrev}>
