@@ -129,7 +129,7 @@ export default function services(props) {
                                             </div>
                                             <div className="ms-4">
                                                 <p className="mb-0">Free</p>
-                                                <h5 className="mb-0">Consultation</h5>
+                                                <h5 className="mb-0">Advice</h5>
                                             </div>
                                         </div>
                                     </div>

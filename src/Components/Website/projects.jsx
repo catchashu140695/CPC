@@ -87,48 +87,40 @@ const Projects = () => {
                 <div className="text-center mx-auto mb-5" style={{ maxWidth: "600px" }}>
                     <h1 className="mb-4">Photo Gallery</h1>
                 </div>
-                <div
-                    className="photo-gallery-grid"
-                    style={{
-                        display: 'grid',
-                        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-                        gridTemplateRows: `repeat(${rows}, 1fr)`,
-                        gap: '24px',
-                        perspective: '1200px'
-                    }}
-                >
+                <div className="row g-4">
                     {gridIndexes.map((imgIdx, i) => (
-                        <div
-                            className="photo-gallery-item"
-                            key={i}
-                            style={{
-                                width: '100%',
-                                height: '250px',
-                                overflow: 'hidden',
-                                borderRadius: '12px',
-                                transition: 'transform 0.4s ease, box-shadow 0.4s ease',
-                                cursor: 'pointer'
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'scale(1.05)';
-                                e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'scale(1)';
-                                e.currentTarget.style.boxShadow = 'none';
-                            }}
-                        >
-                            <img
-                                className="img-fluid photo-gallery-img"
-                                src={projectsData[imgIdx].image}
-                                alt={`Gallery ${imgIdx + 1}`}
+                        <div className="col-md-4 col-sm-12" key={i}>
+                            <div
+                                className="photo-gallery-item"
                                 style={{
                                     width: '100%',
-                                    height: '100%',
-                                    objectFit: 'cover',
-                                    display: 'block'
+                                    height: '250px',
+                                    overflow: 'hidden',
+                                    borderRadius: '12px',
+                                    transition: 'transform 0.4s ease, box-shadow 0.4s ease',
+                                    cursor: 'pointer'
                                 }}
-                            />
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                    e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                    e.currentTarget.style.boxShadow = 'none';
+                                }}
+                            >
+                                <img
+                                    className="img-fluid photo-gallery-img"
+                                    src={projectsData[imgIdx].image}
+                                    alt={`Gallery ${imgIdx + 1}`}
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        display: 'block'
+                                    }}
+                                />
+                            </div>
                         </div>
                     ))}
                 </div>

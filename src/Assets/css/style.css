@@ -363,6 +363,54 @@
     transition-delay: .3s;
 }
 
+/* Photo gallery grid used in projects.jsx */
+.photo-gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* mobile-first: 1 column by default */
+    gap: 24px;
+    perspective: 1200px;
+}
+
+.photo-gallery-item {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive: on small screens, show 1 image per row */
+@media (max-width: 576px) {
+    .photo-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .photo-gallery-item {
+        height: 220px; /* slightly smaller on mobile */
+    }
+}
+
+/* Small screens and up (>=576px) show 2 columns */
+@media (min-width: 576px) {
+    .photo-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens and up (>=992px) show 3 columns */
+@media (min-width: 992px) {
+    .photo-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 /*** Quote ***/
 @media (min-width: 992px) {
@@ -397,6 +445,28 @@
     border-radius: 8px 60px 0 0;
 }
 
+/* Ensure team cards and images are uniform size regardless of source image aspect ratio */
+.team-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-img-wrap {
+    width: 100%;
+    height: 260px; /* fixed image area height to keep cards uniform */
+    overflow: hidden;
+    display: block;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop to fill the area while preserving aspect ratio */
+    display: block;
+}
+
+/* footer spacing handled by existing .p-4 utility classes */
+
 .team-item .team-social {
     display: flex;
     flex-direction: column;
@@ -406,7 +476,6 @@
     transition: .5s;
 }
 
-z
 /*** Testimonial ***/
 .testimonial-carousel::before {
     position: absolute;

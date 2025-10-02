@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import AboutUs from '../../Assets/img/AboutUs.jpeg'
+import AboutUs from '../../Assets/img/AboutUs.png'
 
 
 export default function About(props) {
@@ -31,17 +31,30 @@ export default function About(props) {
                     <div className="row g-0 mx-lg-0">
                         <div className="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                             <div className="p-lg-5 pe-lg-0">
-                                <h6 className="text-primary">About Us</h6>
-                                <h1 className="mb-4">Empowering Sustainable Energy Solutions</h1>
+                                <h1 className="text-primary">About Us</h1>
+                                
                                 <p>
-                                    Founded in 2018, Cellera Power Care has established itself as a trusted name in the solar
-                                    energy sector. With over seven years of hands-on experience in revitalizing lead-acid batteries
-                                    and executing both On-Grid and Off-Grid solar power systems, we have consistently delivered
-                                    reliable, innovative energy solutions across Odisha.
+                                    Originally established in 2018 as Cellera Power Care, our company began with a strong focus on
+                                    revitalizing lead-acid batteries and delivering reliable On-Grid and Off-Grid solar power systems.
+                                    With over seven years of hands-on experience, we earned the trust of customers across Odisha by
+                                    consistently providing innovative, cost-effective energy solutions.
                                     <br /><br />
-                                    Driven by a vision to transform the energy landscape, our journey has been marked by steady
-                                    growth and a deep commitment to sustainability and innovation.
+                                    As our expertise and impact grew, so did our vision. Today, we proudly operate as Cellera Eco
+                                    Solution Pvt. Ltd., reflecting our expanded commitment to clean energy, environmental
+                                    responsibility, and technological innovation.
+                                    <br /><br />
+                                    At Cellera, we’re more than just a solar company — we’re energy partners for a sustainable future.
+                                    From residential rooftops to commercial installations, we design and deliver customized solutions
+                                    that empower communities and reduce environmental footprints.
                                 </p>
+                                <p><strong>Why Choose Cellera?</strong></p>
+                                <ul>
+                                    <li>✅ 7+ Years of Field Experience</li>
+                                    <li>✅ Proven Expertise in Battery Revitalization</li>
+                                    <li>✅ End-to-End Solar Solutions (On-Grid & Off-Grid)</li>
+                                    <li>✅ Odisha’s Trusted Clean Energy Partner</li>
+                                    <li>✅ Committed to Innovation & Sustainability</li>
+                                </ul>
                                 
                                 {/* <p><i className="fa fa-check-circle text-primary me-3"></i>Diam dolor diam ipsum</p>
                                 <p><i className="fa fa-check-circle text-primary me-3"></i>Aliqu diam amet diam et eos</p>
@@ -124,43 +137,42 @@ export default function About(props) {
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: "600px" }}>
-                        <h6 class="text-primary">Team Member</h6>
-                        <h1 class="mb-4">Experienced Team Members</h1>
+                        {/* <h6 class="text-primary">Team Member</h6> */}
+                        <h1 class="text-primary mb-4">Experienced Team Members</h1>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item rounded overflow-hidden">
-                                <div class="d-flex">
-                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
-                                    
+                            <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
+                                
+                                 <div class="team-img-wrap">
+                                    <img class="team-img img-fluid w-100" src="img/team-3.png" alt="Tarini Prasad Bal" />                                    
                                 </div>
-                                <div class="p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
+                                <div class="p-4 mt-auto">
+                                    <h5>C S Panigrahi</h5>
+                                    <span>Implementation</span>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item rounded overflow-hidden">
-                                <div class="d-flex">
-                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
-                                    
+                            <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
+                                <div class="team-img-wrap">
+                                    <img class="team-img img-fluid w-100" src="img/team-2.png" alt="Deepak Kumar Barik" />
                                 </div>
-                                <div class="p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
+                                <div class="p-4 mt-auto">
+                                    <h5>Deepak Kumar Barik</h5>
+                                    <span>Marketing</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item rounded overflow-hidden">
-                                <div class="d-flex">
-                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
-                                    
+                            <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
+                               <div class="team-img-wrap">
+                                    <img class="team-img img-fluid w-100" src="img/team-1.png" alt="C S Panigrahi" />
                                 </div>
-                                <div class="p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
+                                <div class="p-4 mt-auto">
+                                    <h5>Tarini Prasad Bal</h5>
+                                    <span>Liaisoning</span>
                                 </div>
                             </div>
                         </div>
