@@ -141,19 +141,7 @@ export default function About(props) {
                         <h1 class="text-primary mb-4">Experienced Team Members</h1>
                     </div>
                     <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
-                                
-                                 <div class="team-img-wrap">
-                                    <img class="team-img img-fluid w-100" src="img/team-3.png" alt="Tarini Prasad Bal" />                                    
-                                </div>
-                                <div class="p-4 mt-auto">
-                                    <h5>C S Panigrahi</h5>
-                                    <span>Implementation</span>
-                                </div>
-                                
-                            </div>
-                        </div>
+                        
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
                                 <div class="team-img-wrap">
@@ -174,6 +162,19 @@ export default function About(props) {
                                     <h5>Tarini Prasad Bal</h5>
                                     <span>Liaisoning</span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item rounded overflow-hidden d-flex flex-column h-100">
+                                
+                                 <div class="team-img-wrap">
+                                    <img class="team-img img-fluid w-100" src="img/team-3.png" alt="Tarini Prasad Bal" />                                    
+                                </div>
+                                <div class="p-4 mt-auto">
+                                    <h5>C S Panigrahi</h5>
+                                    <span>Implementation</span>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
